@@ -1,0 +1,111 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Putatoe HomePage</string>
+    <string name="putatoe">Putatoe</string>
+    <string name="home">Home</string>
+    <string name="banner">Banner</string>
+    <string name="_0">₹ 0</string>
+
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+
+    <string name="recharge">RECHARGE</string>
+    <string name="mobile_recharge">Mobile Recharge</string>
+    <string name="pay_bills">Pay Bills</string>
+    <string name="bill">BILL</string>
+    <string name="loan">LOAN</string>
+    <string name="find_loans">Find Loans</string>
+    <string name="read_news">Read News</string>
+    <string name="news">NEWS</string>
+    <string name="find_jobs">Find Jobs</string>
+    <string name="jobs">JOBS</string>
+    <string name="blogs">BLOGS</string>
+    <string name="read_blogs">Read Blogs</string>
+
+
+    <string name="banners_to_be_displayed">Banners to be displayed</string>
+    <string name="product">Product</string>
+    <string name="none">None</string>
+    <string name="product_name_hindi">itemName(Hindi)</string>
+    <string name="item_type">Item Type</string>
+    <string name="out_of_stock">Out of Stock</string>
+    <string name="units">Unit: 1</string>
+    <string name="qty">Qty: </string>
+    <string name="share">Share</string>
+    <string name="top_deals">Top Deals</string>
+    <string name="fruits_vegetables"><![CDATA[Fruits & Vegetables]]></string>
+    <string name="view_all">View All</string>
+    <string name="grocery">Grocery</string>
+    <string name="plus_sign">+</string>
+
+    <string name="area_manager_portal">Area Manager Portal</string>
+    <string name="user_id_editText">User ID</string>
+    <string name="passwdHead">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="sign_in">Sign in</string>
+
+    <string name="vegetablesApiUrl">https://putatoeprod-k3snqinenq-uc.a.run.app/v1/api/homepage_prodcuct_new_api/6</string>
+    <string name="bannersApiUrl">https://putatoeprod-k3snqinenq-uc.a.run.app/v1/api/getbannertrue</string>
+    <string name="managerApiUrl">https://putatoeprod-k3snqinenq-uc.a.run.app/v1/api/manager_login</string>
+    <string name="ordersManagerApiUrl">https://putatoetest-k3snqinenq-uc.a.run.app/v1/api/orders_manager_new</string>
+    <string name="managerProfileApiUrl">https://putatoeprod-k3snqinenq-uc.a.run.app/v1/api/manager_profile</string>
+    <string name="updateProfileApiUrl">https://putatoetest-k3snqinenq-uc.a.run.app/v1/api/UpdateProfile_Manager</string>
+
+    <string name="managerUserId">22660</string>
+    <string name="managerPasswd">putatoe@7679</string>
+    <string name="invalid_field">Invalid UserID or Password!</string>
+    <string name="invalid_userid">Invalid UserID !</string>
+    <string name="enter_userid">Enter the User ID !</string>
+    <string name="invalid_passwd">Invalid Password !</string>
+    <string name="field_value_is_invalid">Field value is invalid.</string>
+
+    <string name="putatoe_allcaps">PUTATOE</string>
+    <string name="one_solution">One Solution</string>
+
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="sort_by">Sort By :</string>
+    <string name="from_date_this">From this date</string>
+    <string name="till_date_this">Till this date</string>
+
+    <string name="my_profile">My Profile</string>
+    <string name="log_out">Log out</string>
+
+    <string name="first_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="state">State:</string>
+    <string name="district">District:</string>
+    <string name="user_id">User ID:</string>
+    <string name="username">Username:</string>
+    <string name="save_changes">Save Changes</string>
+
+    <string name="pending_orders">Pending Orders</string>
+    <string name="orders_alloted_to_serviceprovider">Orders alloted to ServiceProvider</string>
+    <string name="ongoing_orders">Ongoing Orders</string>
+    <string name="completed_orders">Completed Orders</string>
+    <string name="cancelled_orders">Cancelled Orders</string>
+    <string name="final_cancelled_orders">Final cancelled orders</string>
+
+    <string name="order_id">ORDER_ID</string>
+    <string name="amount">Amount:</string>
+    <string name="mobile">Mobile:</string>
+    <string name="order_date">Order Date:</string>
+    <string name="view_item">View Item</string>
+    <string name="view_address">View Address</string>
+
+    <string name="pending_orders_">pending_orders</string>
+    <string name="pending_to_serviceprovider_orders">pending_to_serviceprovider_orders</string>
+    <string name="ongoing_orders_">ongoing_orders</string>
+    <string name="completed_orders_">completed_orders</string>
+    <string name="cancelled_orders_">cancelled_orders</string>
+    <string name="final_cancelled_orders_">final_cancelled_orders</string>
+
+    <string-array name="spinner_time_intervals">
+        <item>Time Filter</item>
+        <item>Today</item>
+        <item>Last One Week</item>
+        <item>Last 30 Days</item>
+        <item>Last 6 Months</item>
+    </string-array>
+
+</resources>

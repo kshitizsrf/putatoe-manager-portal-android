@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/managerPortalScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".AdminPortalLoginActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_raw" />
+
+    <TextView
+        android:id="@+id/managerPortalHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="28dp"
+        android:fontFamily="@font/titillium_web"
+        android:padding="8dp"
+        android:text="@string/area_manager_portal"
+        android:textColor="#55768F"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/userIdEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/alertImageView"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:contentDescription="@string/field_value_is_invalid"
+        android:padding="4dp"
+        android:src="@drawable/icon_alert"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/userIdEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@id/managerPortalHead"
+        app:layout_constraintTop_toBottomOf="@id/managerPortalHead"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/alertTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="@string/field_value_is_invalid"
+        android:padding="3dp"
+        android:textColor="@color/dark_red"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/userIdEditText"
+        app:layout_constraintStart_toEndOf="@id/alertImageView"
+        app:layout_constraintTop_toBottomOf="@id/managerPortalHead" />
+
+    <EditText
+        android:id="@+id/userIdEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:autofillHints="User ID"
+        android:background="@drawable/edit_text_idpassword"
+        android:ems="12"
+        android:hint="@string/user_id_editText"
+        android:inputType="text"
+        android:padding="8dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:textColor="@color/black"
+        android:textColorHint="@drawable/hint_color_selector"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/passwordEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="@+id/managerPortalHead"
+        app:layout_constraintTop_toBottomOf="@id/managerPortalHead"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:autofillHints="User ID"
+        android:background="@drawable/edit_text_idpassword"
+        android:ems="12"
+        android:hint="@string/passwdHead"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:textColor="@color/black"
+        android:textColorHint="@drawable/hint_color_selector"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/rememberMeCheckBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="@+id/managerPortalHead"
+        app:layout_constraintTop_toBottomOf="@id/userIdEditText"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/rememberMeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/remember_me"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/signInButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/button_background_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingHorizontal="28dp"
+        android:paddingVertical="12dp"
+        android:text="@string/sign_in"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rememberMeCheckBox" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

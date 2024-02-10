@@ -1,0 +1,15 @@
+<!-- custom_spinner_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Background color for the spinner -->
+    <solid android:color="#F3EDED" />
+
+    <!-- Border for the spinner -->
+    <stroke
+        android:width="1.5dp"
+        android:color="#888585" />
+
+    <!-- Corner radius for rounded corners -->
+    <corners android:radius="8dp" />
+</shape>

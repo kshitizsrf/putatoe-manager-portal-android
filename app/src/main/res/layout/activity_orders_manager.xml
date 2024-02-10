@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/datePickerActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <TextView
+            style="@style/OrdersPageHeadTextView"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginVertical="4dp"
+            android:text="@string/from"
+            android:textColor="@color/matte_black" />
+        <EditText
+            android:id="@+id/fromDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/edit_text_date"
+            android:drawableEnd="@drawable/icon_calendar"
+            android:hint="@string/from_date_this"
+            android:importantForAutofill="no"
+            android:inputType="date"
+            android:paddingVertical="14dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="18dp"
+            android:textSize="16sp"
+            tools:ignore="LabelFor" />
+        <TextView
+            style="@style/OrdersPageHeadTextView"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginVertical="4dp"
+            android:text="@string/to"
+            android:textColor="@color/matte_black" />
+        <EditText
+            android:id="@+id/toDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/edit_text_date"
+            android:drawableEnd="@drawable/icon_calendar"
+            android:hint="@string/till_date_this"
+            android:importantForAutofill="no"
+            android:inputType="date"
+            android:paddingVertical="14dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="18dp"
+            android:textSize="16sp"
+            tools:ignore="LabelFor" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="4dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp">
+            <TextView
+                style="@style/OrdersPageHeadTextView"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/sort_by" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_spinner"
+                android:elevation="4dp"
+                android:entries="@array/spinner_time_intervals"
+                android:padding="7dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp">
+                <TextView
+                    android:id="@+id/pendingOrdersButton"
+                    style="@style/OrdersCategoryTextView"
+                    android:text="@string/pending_orders"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:id="@+id/allotedOrdersButton"
+                    style="@style/OrdersCategoryTextView"
+                    android:text="@string/orders_alloted_to_serviceprovider" />
+                <TextView
+                    android:id="@+id/ongoingOrdersButton"
+                    style="@style/OrdersCategoryTextView"
+                    android:text="@string/ongoing_orders" />
+                <TextView
+                    android:id="@+id/completedOrdersButton"
+                    style="@style/OrdersCategoryTextView"
+                    android:text="@string/completed_orders" />
+                <TextView
+                    android:id="@+id/cancelledOrdersButton"
+                    style="@style/OrdersCategoryTextView"
+                    android:text="@string/cancelled_orders" />
+                <TextView
+                    android:id="@+id/finalCancelledOrdersButton"
+                    style="@style/OrdersCategoryTextView"
+                    android:text="@string/final_cancelled_orders" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orderCardsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/datePickerActions" />
+</androidx.constraintlayout.widget.ConstraintLayout>

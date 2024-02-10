@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+
+    <!-- Calendar body -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M20 3H18V1H16V3H8V1H6V3H4C2.89 3 2 3.89 2 5V19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V5C22 3.89 21.11 3 20 3zM20 19H4V8h16v11z"/>
+
+    <!-- Calendar header -->
+    <rect
+        android:fillColor="#FF000000"
+        android:width="16dp"
+        android:height="2dp"
+        android:x="4dp"
+        android:y="5dp"/>
+</vector>
